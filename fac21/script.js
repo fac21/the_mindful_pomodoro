@@ -67,7 +67,7 @@ if (focusMins.innerText == 0 && focusSecs.innerText == 0 && restMins.innerText =
       } else if (restMins.innerText ==  0 && restSecs.innerText == 0)  {
  alarm.play();
  alert("You're all Zenned out! Click OK to rest for 5 more minutes. OR, press reset to restart the timer! 🙏")
- restMins.innerText = 1;
+ restMins.innerText = 5;
 }
 }
 
