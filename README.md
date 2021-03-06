@@ -53,16 +53,17 @@ Once these conditions are met, the alarm and alert are executed (see above). Fol
       } else if(restMins.innerText != 0 && restSecs.innerText == 0){
           restSecs.innerText = 59;
           restMins.innerText--;
-      }  if (restSecs.innerText < 10 && restSecs.innerText > 0) {
+          }  
+          
+        if (restSecs.innerText < 10 && restSecs.innerText > 0) {
           restSecs.innerText = "0" + restSecs.innerText;
       } else if (restMins.innerText ==  0 && restSecs.innerText == 0)  {
  alarm.play();
  alert("You're all Zenned out! Click OK to rest for 5 more minutes. OR, press reset to restart the timer! 🙏")
  restMins.innerText = 5;
 }
-}
-
-}
+ }
+  }
 ```
 
 You may be wondering why I reset the 'restMins' to 5 mins upin completing the timer – won't that just invoke the alert that pops up after the first 'focus' time is completed? No. Why? because when the timer(s) countdown to 0, it does not match the initial condition of 00. See the following lines of code as a demonstration:
@@ -71,7 +72,7 @@ You may be wondering why I reset the 'restMins' to 5 mins upin completing the ti
 focusMins === 0 && focusSecs ===0 and restMins === 5 && restSecs === "00";
 ```
 
-Notice (crucially) that it is checking if resSecs are equal to 0 rather than 00. Ths means that when both the focus time and rest time periods are up, the user can then either press 'breathe' to pause the timer or 'reset' to to reset the timer without being harassed by the alarm and alert that are activated when the focus time is up. This also comes with the advantage of gvining the user the flexibility to prolong their rest time by another 5 minutes autmatically. They can do ths as many times as they like. the only caveat is that they will be alerted that ther rest period is up every 5 minutes (which is *technically* a good thing considering this is a productvity app!)
+Notice (crucially) that it is checking if resSecs are equal to 0 rather than 00. Ths means that when both the focus time and rest time periods are up, the user can then either press 'breathe' to pause the timer or 'reset' to to reset the timer without being harassed by the alarm and alert that are activated when the focus time is up. This also comes with the advantage of giving the user the flexibility to prolong their rest time by another 5 minutes automatically. They can do this as many times as they like. The only caveat is that they will be alerted that ther rest period is up every 5 minutes (which is *technically* a good thing considering this is a productvity app!)
 
 There is also another piece of code related to the above code, see here:
 
