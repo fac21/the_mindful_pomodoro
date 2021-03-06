@@ -58,9 +58,9 @@ Once these conditions are met, the alarm and alert are executed (see above). Fol
         if (restSecs.innerText < 10 && restSecs.innerText > 0) {
           restSecs.innerText = "0" + restSecs.innerText;
       } else if (restMins.innerText ==  0 && restSecs.innerText == 0)  {
- alarm.play();
- alert("You're all Zenned out! Click OK to rest for 5 more minutes. OR, press reset to restart the timer! 🙏")
- restMins.innerText = 5;
+         alarm.play();
+         alert("You're all Zenned out! Click OK to rest for 5 more minutes. OR, press reset to restart the timer! 🙏")
+         restMins.innerText = 5;
 }
  }
   }
@@ -91,6 +91,6 @@ There were other ways I could have improved this app and the code I'd written. B
 
 ## What I learned
 
-I learned more about the 'innerText' feature of JavaScript, having only used 'innerHTML' previously. I also feel as though I further solidified my knowledge of DOM manipulation. In addition, I learned how to incoprorate 'setInterval()' and 'clearInterval()' functions – neither of which I had previously come across. In all honesty, it was a fairly challenging exericse, but, fortunately, it wasn't *too* challenging. I perhaps tried to challenge myself too much oirignally by wanting to make the user have full flexibility over their input times for focus and rest periods. So, one thing I learned by attempting to do this is that forms can be a bit of a pain to use, as it added a real layer of complexity that my final solution doesn't have! 
+I learned more about the 'innerText' feature of JavaScript, having only used 'innerHTML' previously. I also feel as though I further solidified my knowledge of DOM manipulation. In addition, I learned how to incorporate 'setInterval()' and 'clearInterval()' functions – neither of which I had previously come across. In all honesty, it was a fairly challenging exericse, but, fortunately, it wasn't *too* challenging. I perhaps tried to challenge myself too much oiriginally by wanting to make the user have full flexibility over their input times for focus and rest periods. So, one thing I learned by attempting to do this is that forms can be a bit of a pain to use, as it added a real layer of complexity that my final solution doesn't have! 
 
 I realise that my eventual project is pretty primitive, but it does all the things it was set out to achieve. So I'm pretty pleased with the end result as well as the main points covered and learned throughout the project.
