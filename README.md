@@ -17,7 +17,7 @@ A really cool, fun, novel, and challenging exprience! It was my favourite part o
 
 My ideas for this timer were pretty bold to begin with. I was hoping to incororate some of Oli's 'stretch goals', which, to some degree, I did do. But, unfortunately, I haven't made the 'focus' timer function changeable, meaning it is only set to countdown from 25 minutes. The 'rest' timer is slgightly more flexible: it alerts the user when 5 minutes has passed, but they have the option following this to rest for another 5 minutes every time it finishes. They also have the option to 'reset' the timer all over again if they wish, which allows them to start another 25 minute focus period. 
 
-In the end, after stuggling with trying to incorporate 'forms' into the HTML/JS to have the user enter the timer period they wished for, I decided to just overhaul everything and make it as short, sweet, and simle as possible – both in design and in features. And hence – The Mindful Pomodoro was born!
+In the end, after stuggling with trying to incorporate responsive 'forms' into the HTML/JS in such a short timeframe, I decided to just overhaul everything and make it as short, sweet, and simple as possible – both in design and in features. And hence – The Mindful Pomodoro was born!
 
 In terms of the code I wrote, I wrote one main function for the timer:
 
